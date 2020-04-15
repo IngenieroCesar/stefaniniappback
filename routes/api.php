@@ -18,5 +18,11 @@ use Illuminate\Http\Request;
 // });
 
 //Con esta ruta estamos estableciendo el recurso con el que vamos a consumir nuestra API
-Route::apiResource("workposition", "WorkPositionController");
+//Hacemos la autenticación hacia nuestra api mediante un token
+
+Route::apiResource('workposition', 'Api\WorkPositionController')->middleware('auth:api');
+
+
+
+// Route::apiResource('post', 'Api\PostController')->middleware('auth:api');
 
