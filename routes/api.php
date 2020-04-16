@@ -13,9 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
 
 //Con esta ruta estamos estableciendo el recurso con el que vamos a consumir nuestra API
 //Hacemos la autenticación hacia nuestra api mediante un token

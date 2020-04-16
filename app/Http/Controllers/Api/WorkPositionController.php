@@ -24,7 +24,7 @@ class WorkPositionController extends Controller
     public function index()
     {
         //returnamos los objetos
-        return response()->json($this->workposition->paginate());
+        return response()->json($this->workposition->all());
     }
 
     /**

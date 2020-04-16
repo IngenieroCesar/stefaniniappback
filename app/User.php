@@ -25,7 +25,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        //Agregamos nuestro token a las columnas protecgidas
+        'password', 'remember_token', 'api_token'
     ];
 
     /**
